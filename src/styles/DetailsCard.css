@@ -1,0 +1,138 @@
+.details-card {
+  background-color: #fdedd5;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  height: 6x0px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.details-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.details-card-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.details-card-image {
+  width: 420px;
+  height: 200px;
+  object-fit:fill;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.details-card-image:hover {
+  transform: scale(1.1);
+}
+
+.details-card-info {
+  margin-top: 20px;
+}
+
+.details-card-info p {
+  font-size: 1.2rem;
+  margin: 12px 0;
+  line-height: 1.8;
+}
+
+.details-card-info strong {
+  color: #444;
+}
+
+.details-card-info .vegetarian-yes {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.details-card-info .gluten-free-yes {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.details-card-info .vegetarian-no {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.details-card-info .gluten-free-no {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.details-card-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.details-card-footer .cta-button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-card-footer .cta-button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .details-card {
+    padding: 20px;
+  }
+
+  .details-card-image {
+    width: 320px;
+    height: 200px;
+  }
+
+  .details-card-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-card-title {
+    font-size: 1.8rem;
+  }
+
+  .details-card-image {
+    width: 270px;
+    height: 170px;
+  }
+
+  .details-card-info p {
+    font-size: 1rem;
+  }
+
+  .details-card-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

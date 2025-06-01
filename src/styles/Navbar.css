@@ -1,0 +1,83 @@
+.navbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 900px;
+    background-color:rgba(18, 137, 201, 0.819);
+    border-radius: 12px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+    cursor: default;
+    height:60px; 
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+  .logo {
+    
+    font-family:  'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
+  
+  .nav-links li a {
+    color:cornsilk;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  
+  .menu-btn {
+    display: none;
+    font-size: 22px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      background: rgba(0, 0, 0, 0.9);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  }
+  

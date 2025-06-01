@@ -1,0 +1,134 @@
+/* Conteneur principal du panier */
+.panier-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    margin-top: 100px;
+  }
+  
+  /* Titre principal du panier */
+  .panier-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Liste des produits */
+  .panier-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Élément de chaque produit dans le panier */
+  .panier-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .panier-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image du produit */
+  .panier-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  /* Détails du produit (titre, description) */
+  .panier-item .panier-details {
+    flex-grow: 1;
+  }
+  
+  .panier-item .panier-details h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .panier-item .panier-details p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Bouton de suppression */
+  .panier-item button {
+    background-color: #ff4f5a;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .panier-item button:hover {
+    background-color: #ff2f3a;
+  }
+  
+  /* Si le panier est vide */
+  .panier-empty {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+  
+  /* Style pour le footer avec le bouton */
+  .panier-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .panier-footer button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .panier-footer button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Animation de transition pour les éléments du panier */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .panier-item {
+    animation: fadeIn 0.5s ease;
+  }
+  

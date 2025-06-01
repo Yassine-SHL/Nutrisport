@@ -1,0 +1,99 @@
+/* Conteneur principal */
+.user-list-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+/* Titre */
+.user-liste-title {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+/* Message d'erreur ou de statut */
+.status-message {
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Tableau */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden; /* Pour que les coins arrondis soient visibles */
+}
+
+.user-table th, .user-table td {
+  padding: 16px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+}
+
+.user-table th {
+  background-color: #3498db;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.user-table td {
+  background-color: #f9f9f9;
+}
+
+.user-table tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+.user-table tr:hover {
+  background-color: #e6f1ff;
+  cursor: pointer;
+}
+
+.user-table td {
+  font-size: 14px;
+  color: #555;
+  padding: 12px;
+}
+
+.user-table td:last-child {
+  font-weight: 500;
+}
+
+.user-table th, .user-table td {
+  transition: background-color 0.3s ease;
+}
+
+.user-table tr:hover td {
+  background-color: #e6f1ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-list-container {
+    width: 95%;
+  }
+
+  .user-table th, .user-table td {
+    font-size: 14px;
+  }
+}
